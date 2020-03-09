@@ -43,6 +43,8 @@ composer require sbkl/sbkl-api
 
 ### 5- Spatie roles and permissions config
 
+Delete the initial tables from the migration folder.
+
 Publish the config and migration files:
 
 ```
@@ -68,7 +70,7 @@ composer dump-autoload
 ### 7- Launch migration with seeder
 
 ```
-php artisan migrate:refresh —seed
+php artisan migrate:refresh --seed
 ```
 
 ### 8- Passport setup
@@ -110,7 +112,7 @@ In Config/cors.php:
 
 Remove user routes from routes/api.php.
 
-### Apendix
+### Appendix
 
 Setup test xml
 
