@@ -1,0 +1,45 @@
+{
+    "name": "sbkl/sbkl-api",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastien Koziel",
+            "email": "sebastien@sbkl.ltd"
+        }
+    ],
+    "require": {
+        "laravel/passport": "^8.4",
+        "spatie/laravel-permission": "^3.11",
+        "staudenmeir/eloquent-has-many-deep": "^1.12",
+        "symfony/psr-http-message-bridge": "^2.0",
+        "nyholm/psr7": "^1.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "orchestra/testbench": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "sbkl\\SbklApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "sbkl\\SbklApi\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "sbkl\\SbklApi\\SbklComponentsServiceProvider"
+            ],
+            "aliases": {
+                "Hello": "sbkl\\SbklApi\\Facades\\Hello"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
